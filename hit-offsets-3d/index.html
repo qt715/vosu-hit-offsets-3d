@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hit Offsets 3D</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <main class="plot is-hidden" data-root>
+      <canvas class="surface" data-canvas></canvas>
+      <div class="labels" data-labels aria-hidden="true"></div>
+      <header class="hud" data-hud>
+        <span class="title">Hit offsets</span>
+        <span class="stats" data-stats>waiting for hits</span>
+      </header>
+      <span class="backend" data-backend></span>
+      <p class="notice" data-notice hidden></p>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

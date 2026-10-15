@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Hit Offsets Montserrat";
+  src: url("../fonts/Montserrat.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: block;
+}
+
+:root {
+  /* No color-scheme: a dark scheme inside a light-scheme embedder (vosulay, OBS) makes Chromium
+     paint an opaque iframe backdrop instead of keeping the overlay transparent. */
+  --font: "Hit Offsets Montserrat", "Montserrat", system-ui, sans-serif;
+  --ink: #e9ecf2;
+  --muted: #a3a9b6;
+  --shadow: 0 1px 3px rgb(8 10 14 / 0.9), 0 0 8px rgb(8 10 14 / 0.55);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+
+.plot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+  transition: opacity 200ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.plot:active {
+  cursor: grabbing;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.surface {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.labels span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--muted);
+  text-shadow: var(--shadow);
+  translate: -50% -50%;
+  will-change: transform;
+}
+
+.labels .axis {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+/* Beside the vertical axis rather than centred on it. */
+.labels .tick {
+  translate: 7px -50%;
+}
+
+.hud {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  display: grid;
+  gap: 3px;
+  pointer-events: none;
+  text-shadow: var(--shadow);
+}
+
+.title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.stats {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.backend {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-shadow: var(--shadow);
+  pointer-events: none;
+}
+
+.notice {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #f3c97a;
+  text-shadow: var(--shadow);
+  pointer-events: none;
+}
+
+[hidden] {
+  display: none !important;
+}

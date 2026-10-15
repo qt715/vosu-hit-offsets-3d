@@ -1,0 +1,7 @@
+Usecase: ingame,obs-overlay
+Name: Hit Offsets 3D
+Version: 1.0.0
+Author: sxlvia
+CompatibleWith: vosu
+Resolution: 520x520
+Notes: 3D scatter of osu!standard hit offsets: cursor x/y from the note centre and hit error in ms (vosu 1.1.0+ hitOffsets)

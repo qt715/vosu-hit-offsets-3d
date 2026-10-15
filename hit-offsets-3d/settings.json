@@ -1,0 +1,94 @@
+[
+  {
+    "uniqueID": "visibility",
+    "type": "options",
+    "title": "Visibility",
+    "description": "When the plot is shown: during gameplay only, also on the results screen, or always. It only appears in osu!standard, the only ruleset with hit offsets.",
+    "options": [
+      "gameplay",
+      "gameplay + results",
+      "always"
+    ],
+    "value": "gameplay + results"
+  },
+  {
+    "uniqueID": "pointSize",
+    "type": "number",
+    "title": "Point size (px)",
+    "description": "Diameter of each hit at the plot's centre distance; new hits start larger and shrink to this size as they fade",
+    "options": "",
+    "value": 7
+  },
+  {
+    "uniqueID": "fadeDuration",
+    "type": "number",
+    "title": "Fade duration (s)",
+    "description": "Seconds a new hit stays emphasised (larger, brighter, with a line down to the zero-error ring) before it settles into the history",
+    "options": "",
+    "value": 3
+  },
+  {
+    "uniqueID": "fadedOpacity",
+    "type": "number",
+    "title": "Faded opacity",
+    "description": "Opacity of older hits, from 0 (hidden) to 1 (as bright as new hits)",
+    "options": "",
+    "value": 0.35
+  },
+  {
+    "uniqueID": "maxPoints",
+    "type": "number",
+    "title": "Max points",
+    "description": "How many of the most recent hits are drawn; older hits of the play are kept but not shown",
+    "options": "",
+    "value": 1500
+  },
+  {
+    "uniqueID": "autoRotateSpeed",
+    "type": "number",
+    "title": "Auto-rotate speed (°/s)",
+    "description": "Camera orbit speed in degrees per second; 0 stops it, negative values rotate the other way",
+    "options": "",
+    "value": 10
+  },
+  {
+    "uniqueID": "showLabels",
+    "type": "checkbox",
+    "title": "Show axis labels",
+    "description": "Directions, the px scale and the timing window edges in ms",
+    "options": "",
+    "value": true
+  },
+  {
+    "uniqueID": "showInfo",
+    "type": "checkbox",
+    "title": "Show info",
+    "description": "Title, hit count, average error, circle size with the hit-circle radius, and the renderer in use",
+    "options": "",
+    "value": true
+  },
+  {
+    "uniqueID": "colorGreat",
+    "type": "color",
+    "title": "300 colour",
+    "description": "Hits inside the 300 (great) timing window, and that window's rings",
+    "options": "",
+    "value": "#79c7f2"
+  },
+  {
+    "uniqueID": "colorOk",
+    "type": "color",
+    "title": "100 colour",
+    "description": "Hits inside the 100 (ok) timing window, and that window's rings",
+    "options": "",
+    "value": "#9ad672"
+  },
+  {
+    "uniqueID": "colorMeh",
+    "type": "color",
+    "title": "50 colour",
+    "description": "Hits inside the 50 (meh) timing window, and that window's rings",
+    "options": "",
+    "value": "#f0b54a"
+  }
+]

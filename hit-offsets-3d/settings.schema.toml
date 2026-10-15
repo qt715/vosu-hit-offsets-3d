@@ -1,0 +1,91 @@
+[[settings]]
+description = "When the plot is shown: during gameplay only, also on the results screen, or always. It only appears in osu!standard, the only ruleset with hit offsets."
+options = [
+    "gameplay",
+    "gameplay + results",
+    "always",
+]
+title = "Visibility"
+type = "options"
+uniqueID = "visibility"
+value = "gameplay + results"
+
+[[settings]]
+description = "Diameter of each hit at the plot's centre distance; new hits start larger and shrink to this size as they fade"
+options = ""
+title = "Point size (px)"
+type = "number"
+uniqueID = "pointSize"
+value = 7
+
+[[settings]]
+description = "Seconds a new hit stays emphasised (larger, brighter, with a line down to the zero-error ring) before it settles into the history"
+options = ""
+title = "Fade duration (s)"
+type = "number"
+uniqueID = "fadeDuration"
+value = 3
+
+[[settings]]
+description = "Opacity of older hits, from 0 (hidden) to 1 (as bright as new hits)"
+options = ""
+title = "Faded opacity"
+type = "number"
+uniqueID = "fadedOpacity"
+value = 0.35
+
+[[settings]]
+description = "How many of the most recent hits are drawn; older hits of the play are kept but not shown"
+options = ""
+title = "Max points"
+type = "number"
+uniqueID = "maxPoints"
+value = 1500
+
+[[settings]]
+description = "Camera orbit speed in degrees per second; 0 stops it, negative values rotate the other way"
+options = ""
+title = "Auto-rotate speed (°/s)"
+type = "number"
+uniqueID = "autoRotateSpeed"
+value = 10
+
+[[settings]]
+description = "Directions, the px scale and the timing window edges in ms"
+options = ""
+title = "Show axis labels"
+type = "checkbox"
+uniqueID = "showLabels"
+value = true
+
+[[settings]]
+description = "Title, hit count, average error, circle size with the hit-circle radius, and the renderer in use"
+options = ""
+title = "Show info"
+type = "checkbox"
+uniqueID = "showInfo"
+value = true
+
+[[settings]]
+description = "Hits inside the 300 (great) timing window, and that window's rings"
+options = ""
+title = "300 colour"
+type = "color"
+uniqueID = "colorGreat"
+value = "#79c7f2"
+
+[[settings]]
+description = "Hits inside the 100 (ok) timing window, and that window's rings"
+options = ""
+title = "100 colour"
+type = "color"
+uniqueID = "colorOk"
+value = "#9ad672"
+
+[[settings]]
+description = "Hits inside the 50 (meh) timing window, and that window's rings"
+options = ""
+title = "50 colour"
+type = "color"
+uniqueID = "colorMeh"
+value = "#f0b54a"
