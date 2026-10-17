@@ -16,7 +16,7 @@ The plot only appears in osu!standard, the only ruleset with hit offsets. By def
 
 ## Requirements
 
-- **vosu 1.1.0 or newer.** The overlay reads `hitOffsets`, a vosu-only field added in 1.1.0. On older vosu versions, or on tosu, it shows a notice instead of hits.
+- **vosu 1.1.0 or newer, with hit offsets turned on.** The overlay reads `hitOffsets`, a vosu-only field added in 1.1.0. It is off by default: enable **Standard hit offsets** in the vosu dashboard's Settings (Game data), or set `ENABLE_HIT_OFFSETS = true` in `vosu.toml`. With the setting off, on older vosu versions, or on tosu, the overlay shows a notice instead of hits.
 - A Chromium-based browser source: OBS, vosulay or a regular browser.
 
 ## Installation

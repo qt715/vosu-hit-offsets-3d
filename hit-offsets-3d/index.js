@@ -213,7 +213,7 @@ function updateHud() {
     stats.textContent = `${store.count} hits · avg ${sign}${Math.abs(mean).toFixed(1)} ms · ${cs}`;
   }
   if (decoder.supported === false) {
-    notice.textContent = "This server sends no hitOffsets. Update vosu to 1.1.0 or newer.";
+    notice.textContent = "No hitOffsets from vosu. Turn on \"Standard hit offsets\" (ENABLE_HIT_OFFSETS) in vosu's settings; it needs vosu 1.1.0 or newer.";
     notice.hidden = false;
   } else if (root.dataset.renderer === "none") {
     notice.textContent = "Neither WebGPU nor WebGL is available in this browser.";
